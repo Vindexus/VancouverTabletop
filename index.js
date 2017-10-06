@@ -12,4 +12,4 @@ require('http').createServer(function (request, response) {
         //
         file.serve(request, response);
     }).resume();
-}).listen(8050);
+}).listen(process.env.PORT || 8050);
